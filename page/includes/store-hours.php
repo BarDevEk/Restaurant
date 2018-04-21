@@ -41,8 +41,8 @@ $exceptions = array(
 // Warning: %open% and %closed% will NOT work if you have multiple time ranges assigned to a single day.
 // Optional: use %day% to make your "closed all day" message more dynamic.
 // Optional: use %exception% to make your exception messages dynamic.
-$open_now = "<strong class='open'>We're open! Today's hours are %open% until %closed%.</strong>";
-$closed_now = "<strong class='closed'>Sorry, we're closed. Today's hours are %open% until %closed%.</strong>";
+$open_now = "<strong class='open'>We're open! <br> Today's hours are %open% until %closed%.</strong>";
+$closed_now = "<strong class='closed'>Sorry, we're closed. <br> Today's hours are %open% until %closed%.</strong>";
 $closed_all_day = "<strong class='closed'>Sorry, we're closed on %day%.</strong>";
 $exception = "<strong class='closed'>Sorry, we're closed for %exception%.</strong>";
 

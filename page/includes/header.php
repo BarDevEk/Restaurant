@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title><?php echo TITLE; ?></title>
 	<link rel="stylesheet" type="text/css" href="/assets/styles.css">
 </head>
 <body id="final-example">
