@@ -5,27 +5,27 @@
 				<div class ="column three">
 
 					<strong>PHONE</strong>
-					888.529.3819
+					+48 123 45 67
 
 				</div> <!-- column -->
 
 				<div class ="column three">
 					<strong>LOCATION</strong>
-					123 Kapiolani Boulvard <br>
-					honolulu, HI
+					Gdańsk, ul Długa 1 <br>
+				
 				</div> <!-- column -->
 
 				<div class ="column three last">
 
-					<strong>HOURS</strong>
-					<em>Tuesday - Thursday</em><br>
-					1:00 - 9:00 pm <br><br>
+					<strong>GODZINY OTWARCIA</strong>
+					<em> Poniedziałek - Czwartek</em><br>
+					9:00 - 21:00 <br><br>
 
-					<em>Friday - Saturday</em><br>
-					4:00 - 11:00 pm <br><br>
+					<em>Piątek - Sobota</em><br>
+					9:00 - 23:00 pm <br><br>
 
-					<em>Sunday - Monday</em><br>
-					Closed <br><br>
+					<em>Niedziela</em><br>
+					9:00 - 21:00 <br><br>
 
 					<?php include ('includes/store-hours.php'); ?>
 					
@@ -33,7 +33,7 @@
 				
 			</div> <!-- footer -->
 
-			<small>&copy <?php echo date('Y'); ?> <?php echo $companyName; ?> </small>
+			<small>&copy; <?php echo date('Y'); ?> <?php echo $companyName; ?> </small>
 			
 		</div> <!-- content -->
 

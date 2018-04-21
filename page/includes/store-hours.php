@@ -18,22 +18,22 @@ date_default_timezone_set('Europe/Warsaw');
 // If open multiple times in one day, enter time ranges separated by a comma
 // If open late (ie. 6pm - 1am), add hours after midnight to the next day (ie. 00:00-1:00)
 $hours = array(
-    'mon' => array('00:00-00:00'),
-    'tue' => array('13:00-21:00'),
-    'wed' => array('13:00-21:00'),
-    'thu' => array('13:00-21:00'),
-    'fri' => array('16:00-23:00'),
-    'sat' => array('16:00-23:00'),
-    'sun' => array('00:00-00:00')
+    'mon' => array('09:00-21:00'),
+    'tue' => array('09:00-21:00'),
+    'wed' => array('09:00-21:00'),
+    'thu' => array('09:00-21:00'),
+    'fri' => array('09:00-23:00'),
+    'sat' => array('09:00-23:00'),
+    'sun' => array('09:00-21:00')
 );
 
 // Optional: add exceptions (great for holidays etc.)
 // Works best with format month/day
 // Leave array empty if no exceptions
 $exceptions = array(
-	' 1 day of Christmas' => '12/25',
-	' 2 day of Christmas' => '12/26',
-	'New Years Day' => '1/1'
+	'1 Dzień Świąt' => '12/25',
+	'2 Dzień Świąt' => '12/26',
+	'Nowy Rok' => '1/1'
 );
 
 // Place HTML for output below. This is what will show in the browser.
@@ -41,25 +41,25 @@ $exceptions = array(
 // Warning: %open% and %closed% will NOT work if you have multiple time ranges assigned to a single day.
 // Optional: use %day% to make your "closed all day" message more dynamic.
 // Optional: use %exception% to make your exception messages dynamic.
-$open_now = "<strong class='open'>We're open! <br> Today's hours are %open% until %closed%.</strong>";
-$closed_now = "<strong class='closed'>Sorry, we're closed. <br> Today's hours are %open% until %closed%.</strong>";
-$closed_all_day = "<strong class='closed'>Sorry, we're closed on %day%.</strong>";
-$exception = "<strong class='closed'>Sorry, we're closed for %exception%.</strong>";
+$open_now = "<strong class='open'>Zapraszamy! <br> Dzisiaj jesteśmy otwarci od %open% do %closed%.</strong>";
+$closed_now = "<strong class='closed'>Niestety, już zamknęliśmy. <br> Dzisiaj byliśmy otwarci od %open% until %closed%. Zapraszamy jutro od  %open%</strong>";
+$closed_all_day = "<strong class='closed'>W dniu dzisiejszym restauracja jest nieczynna</strong>";
+$exception = "<strong class='closed'>W dniu dzisiejszym restauracja jest nieczynna</strong>";
 
 // Enter custom time format if using %open% and %closed%
 // (options listed here: http://php.net/manual/en/function.date.php)
-$time_format = 'g:ia';
+$time_format = 'G:i';
 
 // The %day% shortcode is replaced by these days of the week.
 // Edit these if you'd like to use a language other than English.
 $days = array(
-  'mon' => 'Mondays',
-  'tue' => 'Tuesdays',
-  'wed' => 'Wednesdays',
-  'thu' => 'Thursdays',
-  'fri' => 'Fridays',
-  'sat' => 'Saturdays',
-  'sun' => 'Sundays'
+  'mon' => 'Poniedziałek',
+  'tue' => 'Wtorek',
+  'wed' => 'Środa',
+  'thu' => 'Czwartek',
+  'fri' => 'Piątek',
+  'sat' => 'Sobota',
+  'sun' => 'Niedziela'
 );
 
 
