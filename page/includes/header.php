@@ -20,7 +20,7 @@
 		<div id="nav">
 				
 			<?php
-
+			$companyName = "Franklin's Fine Dining";
 			include('includes/arrays.php');
 			include('includes/nav.php');
 

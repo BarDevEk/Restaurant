@@ -26,12 +26,14 @@
 
 					<em>Sunday - Monday</em><br>
 					Closed <br><br>
+
+					<?php include ('includes/store-hours.php'); ?>
 					
 				</div> <!-- column -->
 				
 			</div> <!-- footer -->
 
-			<small>&copy 2018 Bartek </small>
+			<small>&copy <?php echo date('Y'); ?> <?php echo $companyName; ?> </small>
 			
 		</div> <!-- content -->
 
